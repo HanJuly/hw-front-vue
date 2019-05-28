@@ -11,18 +11,21 @@
           <div class="right-box">
             <div class="nav-list">
               <el-autocomplete
-                placeholder="请输入商品信息"
+                placeholder="请输入搜索信息"
                 icon="search"
                 v-model="input"
                 minlength=1
                 maxlength=100
                 :fetch-suggestions="querySearchAsync"
                 @select="handleSelect"
+
+              >
+              <!--  未来加入点击的功能
                 :on-icon-click="handleIconClick"
-                @keydown.enter.native="handleIconClick">
+                @keydown.enter.native="handleIconClick"-->
               </el-autocomplete>
-              <router-link to="/goods"><a @click="changePage(2)">全部商品</a></router-link>
-              <router-link to="/thanks"><a @click="changePage(4)">捐赠</a></router-link>
+<!--              <router-link to="/goods"><a @click="changePage(2)">全部商品</a></router-link>-->
+<!--              <router-link to="/thanks"><a @click="changePage(4)">捐赠</a></router-link>-->
               <!-- <router-link to="/">Smartisan M1 / M1L</router-link>
               <router-link to="/">Smartisan OS</router-link>
               <router-link to="/">欢喜云</router-link>
@@ -33,40 +36,40 @@
               <div class="user pr">
                 <router-link to="/user">个人中心</router-link>
                 <!--用户信息显示-->
-                <div class="nav-user-wrapper pa" v-if="login">
-                  <div class="nav-user-list">
-                    <ul>
-                      <!--头像-->
-                      <li class="nav-user-avatar">
-                        <div>
-                          <span class="avatar" :style="{backgroundImage:'url('+userInfo.info.file+')'}">
-                          </span>
-                        </div>
-                        <p class="name">{{userInfo.info.username}}</p>
-                      </li>
-                      <li>
-                        <router-link to="/user/orderList">我的订单</router-link>
-                      </li>
-                      <li>
-                        <router-link to="/user/information">账号资料</router-link>
-                      </li>
-                      <li>
-                        <router-link to="/user/addressList">收货地址</router-link>
-                      </li>
-                      <li>
-                        <router-link to="/user/support">售后服务</router-link>
-                      </li>
-                      <li>
-                        <router-link to="/user/coupon">我的优惠</router-link>
-                      </li>
-                      <li>
-                        <a href="javascript:;" @click="_loginOut">退出</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
+<!--                <div class="nav-user-wrapper pa" v-if="login">-->
+<!--                  <div class="nav-user-list">-->
+<!--                    <ul>-->
+<!--                      &lt;!&ndash;头像&ndash;&gt;-->
+<!--                      <li class="nav-user-avatar">-->
+<!--                        <div>-->
+<!--                          <span class="avatar" :style="{backgroundImage:'url('+userInfo.info.file+')'}">-->
+<!--                          </span>-->
+<!--                        </div>-->
+<!--                        <p class="name">{{userInfo.info.username}}</p>-->
+<!--                      </li>-->
+<!--                      <li>-->
+<!--                        <router-link to="/user/orderList">我的订单</router-link>-->
+<!--                      </li>-->
+<!--                      <li>-->
+<!--                        <router-link to="/user/information">账号资料</router-link>-->
+<!--                      </li>-->
+<!--                      <li>-->
+<!--                        <router-link to="/user/addressList">收货地址</router-link>-->
+<!--                      </li>-->
+<!--                      <li>-->
+<!--                        <router-link to="/user/support">售后服务</router-link>-->
+<!--                      </li>-->
+<!--                      <li>-->
+<!--                        <router-link to="/user/coupon">我的优惠</router-link>-->
+<!--                      </li>-->
+<!--                      <li>-->
+<!--                        <a href="javascript:;" @click="_loginOut">退出</a>-->
+<!--                      </li>-->
+<!--                    </ul>-->
+<!--                  </div>-->
+<!--                </div>-->
               </div>
-              <div class="shop pr" @mouseover="cartShowState(true)" @mouseout="cartShowState(false)"
+              <div class="shop pr" @mouseover="cartShowState(true)" style="display: none" @mouseout="cartShowState(false)"
                    ref="positionMsg">
                 <router-link to="/cart"></router-link>
                 <span class="cart-num">
@@ -123,8 +126,8 @@
           </div>
         </div>
       </header>
-      <slot name="nav">
-        <div class="nav-sub" :class="{fixed:st}">
+      <slot name="nav" >
+        <div class="nav-sub" :class="{fixed:st}" style="display: none">
           <div class="nav-sub-bg"></div>
           <div class="nav-sub-wrapper" :class="{fixed:st}">
             <div class="w">

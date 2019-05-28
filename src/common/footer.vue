@@ -1,7 +1,7 @@
 <template>
   <div class="footer">
     <div class="container">
-      <div class="siteinfo">
+      <div class="siteinfo" style="display:none;">
         <ul class="c0">
           <h3 class="c1">订单服务</h3>
           <ul>
@@ -61,7 +61,7 @@
       </div>
 
       <div class="copyright">
-        <h4 class="content-c2">Copyright ©2017, exrick.cn Co., Ltd. All Rights Reserved.本网站设计内容大部分属锤子科技</h4>
+        <h4 class="content-c2">Copyright ©2017, exrick.cn Co., Ltd. All Rights Reserved.本网站设计内容大部分属锤子科技与github开源作者Exrick</h4>
         <ul class="privacy">
           <li class="content-c1"><a class="content-c0" @click="open1">法律声明</a></li>
           <li class="content-c1"><a class="content-c0" @click="open2">隐私条款</a></li>
@@ -70,8 +70,8 @@
       </div>
       <div class="cop">
         <a class="content-c3" href="http://www.miibeian.gov.cn/" target="_blank">
-          <span class="content-c3">蜀ICP备16030308号-1</span>
-          <span class="content-c3">蜀ICP证16030308号</span>
+          <span class="content-c3">贵ICP备xxxxxxx号-1</span>
+          <span class="content-c3">贵ICP证xxxxxxx号</span>
         </a>
       </div>
     </div>
