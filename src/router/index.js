@@ -3,10 +3,11 @@
  */
 import Vue from 'vue'
 import Router from 'vue-router'
+const matchData = () => import('/page/Home/matchData.vue')
+const Home = () => import('/page/Home/home.vue')
 const Index = () => import('/page/index.vue')
 const Login = () => import('/page/Login/login.vue')
 const Register = () => import('/page/Login/register.vue')
-const Home = () => import('/page/Home/home.vue')
 const GoodS = () => import('/page/Goods/goods.vue')
 const goodsDetails = () => import('/page/Goods/goodsDetails.vue')
 const Cart = () => import('/page/Cart/cart.vue')
@@ -45,6 +46,7 @@ export default new Router({
         {path: '/refreshgoods', name: 'refreshgoods', component: RefreshGoods}
       ]
     },
+    {path: '/matchData', name: 'matchData', component: matchData},
     {path: '/login', name: 'login', component: Login},
     {path: '/register', name: 'register', component: Register},
     {path: '/cart', name: 'cart', component: Cart},

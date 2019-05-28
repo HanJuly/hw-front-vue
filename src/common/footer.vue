@@ -129,7 +129,7 @@
     border-top: 1px solid #e6e6e6;
     background: #fafafa;
     margin-top: 60px;
-    height: 350px;
+    height: 150px;
     display: flex;
     flex-direction: column;
     align-items: center;

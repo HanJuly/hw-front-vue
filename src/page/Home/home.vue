@@ -128,7 +128,7 @@
         clearInterval(this.timer)
       },
       linkTo (item) {
-        window.location.href = item.url
+        this.$router.push({path: '/matchData'})
       },
       bgOver (e) {
         this.bgOpt.px = e.offsetLeft

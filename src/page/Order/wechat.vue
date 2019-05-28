@@ -18,7 +18,7 @@
           <div class="box-btn">
             <div>
               <span>
-              
+
               </span>
               <em><span>¥</span>{{orderTotal}}</em>
               <y-button :text="payNow"
@@ -269,7 +269,7 @@
     color: #222;
     margin-top: -45px;
   }
-  
+
   .timeout{
     position: absolute;
     top: 0;
@@ -283,3 +283,4 @@
     z-index: 1;
   }
 </style>
+
