@@ -38,42 +38,6 @@
            <div class="right-value">{{item.guest}}</div>
          </div>
        </div>
-
-<!--       <div class="data1">-->
-<!--         <div class="left-value">1</div>-->
-<!--         <div class="note">射正</div>-->
-<!--         <div class="right-value">12</div>-->
-<!--       </div>-->
-<!--       <div class="data1">-->
-<!--         <div class="left-value">20</div>-->
-<!--         <div class="note">进攻</div>-->
-<!--         <div class="right-value">84</div>-->
-<!--       </div>-->
-<!--       <div class="data1">-->
-<!--         <div class="left-value">2</div>-->
-<!--         <div class="note">危险进攻	</div>-->
-<!--         <div class="right-value">40</div>-->
-<!--       </div>-->
-<!--       <div class="data1">-->
-<!--         <div class="left-value">1</div>-->
-<!--         <div class="note">任意球	</div>-->
-<!--         <div class="right-value">4</div>-->
-<!--       </div>-->
-<!--       <div class="data1">-->
-<!--         <div class="left-value">2</div>-->
-<!--         <div class="note">角球</div>-->
-<!--         <div class="right-value">4</div>-->
-<!--       </div>-->
-<!--       <div class="data1">-->
-<!--         <div class="left-value">0</div>-->
-<!--         <div class="note">越位</div>-->
-<!--         <div class="right-value">4</div>-->
-<!--       </div>-->
-<!--       <div class="data1">-->
-<!--         <div class="left-value">10</div>-->
-<!--         <div class="note">犯规</div>-->
-<!--         <div class="right-value">5</div>-->
-<!--       </div>-->
      </div>
    </div>
    <Footer></Footer>
@@ -237,7 +201,7 @@
     margin-top: 20px;
     height: 160px;
     width: 680px;
-    background: url("/static/images/bonawu.jpg");
+    background: url("../../../static/images/bonawu.jpg");
     background-size: 100%;
     box-sizing: border-box;
     border: 1px solid rgba(0, 0, 0, .14);
